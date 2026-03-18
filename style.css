@@ -12,7 +12,6 @@ body {
   flex-direction: column;
 }
 
-/* Фиксированная шапка */
 header {
   position: sticky;
   top: 0;
@@ -26,54 +25,70 @@ header {
   text-align: center;
 }
 
-/* Контент не уходит под шапку */
 div {
   margin-top: 60px;
-  flex: 1;               /* растягивает main, прижимает footer вниз */
+  flex: 1;
   padding: 24px 16px;
-  font-family: Arial, sans-serif;
-  display: grid;
-  align-items: center;
-  grid-column: 1fr 1fr 1fr;
+  
 }
 
 .one {
-
+  background: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 20px ;
 }
 
 .two {
-    display: grid;
-    grid-column: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  
+}
+
+.zag {
+  text-align: center;
 }
 
 .three {
     background: #f4f4f4;
-    padding: 10px 20px;
+    padding: 20px;
     border-left: 5px solid #0077cc;
     margin: 20px 0;
-    font-family: Arial, sans-serif;
-    word-spacing: 14px;
     line-height: 1.6;
 }
 
 section {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    background: #f4f4f4;
+    padding: 20px 0;
+    border-bottom: 2px solid #8a8a8a;
+    margin-bottom: 20px;
 }
 
-h2 {
+/*h2 {
     font-size: 14px;
-}
+}*/
 
-/* Контейнер по центру */
 .container {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto;   
+  padding: 0 16px; 
 }
 
 footer {
   padding: 24px;
   background: #f5f5f5;
   text-align: start;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  align-content: center; /*!!!*/
+  
+}
+
+article {
+  border-bottom: 2px solid #bdbdbd;
+  padding-bottom: 5px;
 }
